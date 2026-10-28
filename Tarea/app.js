@@ -10,13 +10,13 @@ formulario.addEventListener("submit", function(evento) {
   const textoTitulo = titulo.value.trim();
   const textoContenido = contenido.value.trim();
 
-  // Evitar notas vacías
+  // Evitar notas completamente vacías
   if (!textoTitulo && !textoContenido) {
     alert("Escribe un título o contenido para la nota.");
     return;
   }
 
-  const nota = document.createElement("div");
+  const nota = document.createElement("article");
   nota.className = "nota";
 
   const encabezado = document.createElement("h3");
