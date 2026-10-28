@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis notas</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <main class="contenedor">
+    <h1>Mis notas</h1>
+
+    <h2>Nueva nota</h2>
+
+    <form id="formulario">
+      <input
+        type="text"
+        id="titulo"
+        placeholder="Título de la nota"
+      >
+
+      <textarea
+        id="contenido"
+        placeholder="Escribe tu nota..."
+        rows="4"
+      ></textarea>
+
+      <button class="agregar" type="submit">Agregar nota</button>
+    </form>
+
+    <h2>Mis notas guardadas</h2>
+    <div id="listaNotas"></div>
+  </main>
+</body>
+</html>
